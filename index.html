@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body xstyle="max-height: 896px;">
+    <div id="div1"><br>
+        <span style="margin-top: 30px;">Register</span>
+        <br>
+        <input type="text" placeholder="Your Name" id="nam">
+        <br>
+        <input type="email" placeholder="Email Address" id="email">
+        <br>
+        <input type="text" placeholder="Password"maxlength='15' id="pass">
+        <br>
+        <button onclick="submit()">LOGIN</button>
+
+    </div>
+    <br>
+    <div id="div2">
+        <table>
+            <thead>
+                <tr >
+                    <th>SNO</th>
+                    <th >
+                        NAME
+                    </th>
+                    <th id="fees" >
+                        FEES
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>SATHISH</td>
+                    <td id="fees">300000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>RAMESH</td>
+                    <td id="fees">NIL</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>RAHUL.T</td>
+                    <td id="fees">NIL</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>GUNDU HARI</td>
+                    <td id="fees">120000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>RAJESH</td>
+                    <td id="fees">2000</td>
+                </tr>
+
+            </tbody>
+            
+        </table>
+    </div>
+</body>
+<script>
+    var nam=document.getElementById('nam');
+    var email=document.getElementById('email');
+    var pass=document.getElementById('pass');
+
+    function submit(){
+        if(nam.value==='' && email.value===''&& pass.value===''){
+            alert('please fill all')
+        }
+        else if(nam.value===''){
+            alert('ENTER NAME')
+        }
+        else if(nam.value.length<5){
+            alert('NAME MUST BE 6 OR MORE')
+        }
+        else if(email.value===''){
+            alert('ENTER EMAIL')
+        }
+        else if(email.value.length<15){
+            alert('EMAIL MUST BE 15 OR MORE')
+        }
+        else if(pass.value===''){
+            alert('ENTER PASSWORD')
+        }
+        else if(pass.value.length<6){
+            alert('PASSWORD MUST BE 6 OR MORE')
+        }
+        else{
+            alert('LOGIN')
+        }
+    }
+</script>
+</html>

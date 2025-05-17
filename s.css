@@ -1,0 +1,135 @@
+#div1{
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0,0,3,0.2);
+    width: 414px;
+    height: 300px;
+    margin-top:40px;
+    box-sizing: border-box;
+}
+input{
+    box-shadow: 0 0 5px rgba(0,0,3,0.2);
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 30px;
+    
+    margin-left: 80px;
+    margin-top: 20px;
+    transition: 0.1s;
+}
+input:hover:focus{
+    border-bottom: 3px solid green;
+    border-top: none;
+    transform: translateX(5px);
+}
+span{
+    
+    margin-left: 140px;
+    empty-cells: hide;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight:700;
+    color: #007bff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+button{
+    width: 250px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+    background: #007bff;
+    margin-top: 20px;
+    margin-left: 80px;
+    color: white;
+}
+
+table,th{
+    border: 1px solid;
+    margin: 0;
+    padding-left: 20px;
+    text-align: center;
+    border-collapse: collapse;
+    width: 414px;
+    padding: 20px;
+    box-shadow:0 0 10px rgba(0,0,1,0.2);
+    width: 300px;
+
+}
+td:hover{
+    font-style: italic;
+}
+#div2{
+    
+    overflow-y: auto;
+    height: 140px;
+    width: 414px;
+    margin-left: 50px;
+    overflow-x: hidden;
+
+}
+td{
+    
+    border: 1px solid;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: semi-condensed;
+}
+#fees{
+    background-color: rgb(225, 240, 235);
+}
+
+
+@media (max-width: 600px) {
+    #div1 {
+        width: 90%;
+        margin-left: auto;
+        height: max-content;
+        margin-right: auto;
+    }
+
+    input {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 15px;
+    }
+
+    span {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 24px;
+    }
+
+    button {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 10px;
+        
+    }
+
+    table, th {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    #div2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;    
+        height: auto; }
+            
+    }
